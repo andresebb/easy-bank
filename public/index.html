@@ -23,7 +23,7 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarNav">
     <main>
       <!-- Header -->
       <header id="home">
@@ -48,7 +48,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="#"
                         >Home <span class="sr-only">(current)</span></a
@@ -69,48 +69,96 @@
       </header>
       <!-- Hero -->
       <section class="hero">
-        <div class="hero-img-container container-fluid">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col p-0">
-              <img width="100%" src="images/bg-intro-mobile.svg" alt="" />
+            <div class="col p-0 d-lg-none">
+              <div class="imagenes">
+                <div class="hero-img-container container-fluid">
+                  <div class="row">
+                    <div class="col p-0">
+                      <img
+                        width="100%"
+                        src="images/bg-intro-mobile.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-telefonos">
+                  <div class="hero-telefonos-container">
+                    <img src="images/image-mockups.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="container her-text text-center">
+                <div class="row">
+                  <div class="col">
+                    <h1>Next generetion digital banking</h1>
+                    <p>
+                      Take your financial time online. Your EasyBank account
+                      will be a one-stop-shop for spending, saving budgeting,
+                      investing, and much more.
+                    </p>
+                    <button class="btn-mio">Request invite</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="hero-telefonos">
-          <div class="hero-telefonos-container">
-            <img src="images/image-mockups.png" alt="" />
-          </div>
-        </div>
-        <div class="container her-text text-center">
-          <div class="row">
-            <div class="col">
-              <h1>Next generetion digital banking</h1>
-              <p>
-                Take your financial time online. Your EasyBank account will be a
-                one-stop-shop for spending, saving budgeting, investing, and
-                much more.
-              </p>
-              <button class="btn-mio">Request invite</button>
+            <div class="col-5 d-none d-lg-block my-auto">
+              <div class="container her-text text-center">
+                <div class="row">
+                  <div class="col">
+                    <h1>Next generetion digital banking</h1>
+                    <p>
+                      Take your financial time online. Your EasyBank account
+                      will be a one-stop-shop for spending, saving budgeting,
+                      investing, and much more.
+                    </p>
+                    <button class="btn-mio">Request invite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7 d-none d-lg-block">
+              <div class="imagenes">
+                <div class="hero-img-container container-fluid p-0">
+                  <div class="row">
+                    <div class="col p-0">
+                      <img
+                        width="100%"
+                        src="images/bg-intro-desktop.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-telefonos">
+                  <div class="hero-telefonos-container">
+                    <img src="images/image-mockups.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- About -->
-      <section id="about" class="mb-4 about container text-center mt-4">
+      <section id="about" class="mb-4 about container-fluid text-center mt-4">
         <div class="row">
-          <div class="col choose-container mb-4">
+          <div class="col text-lg-left choose-container mb-4">
             <h3 class="mb-4">
               Why choose <br />
               Easy bank?
             </h3>
             <p>
               We leverage Open Banking to turn your bank account into your
-              financial hub. Control your finances like never before
+              financial hub.<br />
+              Control your finances like never before
             </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
             <img src="images/icon-online.svg" alt="" />
             <h4 class="m-4">Online Bancking</h4>
             <p>
@@ -118,7 +166,7 @@
               ofyour finances wherever you are in the world
             </p>
           </div>
-          <div class="col-12 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
             <img src="images/icon-budgeting.svg" alt="" />
             <h4 class="m-4">Simple Budgeting</h4>
             <p>
@@ -126,7 +174,7 @@
               notifications when you're close to your hitting limits
             </p>
           </div>
-          <div class="col-12 mb-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
             <img src="images/icon-onboarding.svg" alt="" />
             <h4 class="mt-4">Fats Onboarding</h4>
             <p>
@@ -134,7 +182,7 @@
               start taking control of your finances right away
             </p>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="images/icon-api.svg" alt="" />
             <h4 class="mt-4">Open API</h4>
             <p>
@@ -144,12 +192,13 @@
           </div>
         </div>
       </section>
-      <section id="articles" class="container articles text-center">
+      <section id="articles" class="container-fluid articles text-center">
         <h2 class="mb-4">Last Articles</h2>
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card text-center mb-4">
               <img
+                height="220px"
                 src="images/image-currency.jpg"
                 class="card-img-top"
                 alt="..."
@@ -166,9 +215,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card text-center mb-4">
               <img
+                height="220px"
                 src="images/image-plane.jpg"
                 class="card-img-top"
                 alt="..."
@@ -186,9 +236,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card text-center mb-4">
               <img
+                height="220px"
                 src="images/image-restaurant.jpg"
                 class="card-img-top"
                 alt="..."
@@ -206,9 +257,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card text-center mb-4">
               <img
+                height="220px"
                 src="images/image-confetti.jpg"
                 class="card-img-top"
                 alt="..."
@@ -246,13 +298,21 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <p class="mb-2">About Us</p>
-            <p class="mb-2">Contact</p>
-            <p class="mb-2">Blog</p>
-            <p class="mb-2">Careers</p>
-            <p class="mb-2">Support</p>
-            <p class="mb-2">Privacy Policy</p>
+          <div class="col-12 col-md-4 d-md-flex justify-content-md-center">
+            <div class="row">
+              <div class="col">
+                <p class="mb-2">About Us</p>
+                <p class="mb-2">Contact</p>
+                <p class="mb-2">Blog</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="mb-2">Careers</p>
+                <p class="mb-2">Support</p>
+                <p class="mb-2">Privacy Policy</p>
+              </div>
+            </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="row">
