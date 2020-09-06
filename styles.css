@@ -84,8 +84,13 @@ h4 {
   color: #2c2d4b;
 }
 
-@media screen and (min-width: 500px) {
-  hero-telefonos-container img {
-    src: url(images/icon-facebook.svg);
+@media screen and (min-width: 800px) {
+  .hero-telefonos-container img {
+    width: 100%;
+    position: absolute;
+    top: -22vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
